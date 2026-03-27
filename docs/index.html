@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design System — Kun Chen</title>
+    <link rel="stylesheet" href="css/design-system.css" />
+    <script src="js/design-system.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- ================================================================
+         Header
+         ================================================================ -->
+      <header class="section" style="border-top: none">
+        <p class="section-label">Design System</p>
+        <h1 data-annotate>The architecture of [individual leverage].</h1>
+        <p>
+          A living reference for the visual identity of systems built by one
+          person with the leverage of an enterprise. Everything here is designed
+          to feel like
+          <strong>editorial &times; system console &times; field manual</strong
+          >.
+        </p>
+      </header>
+
+      <!-- ================================================================
+         Premise
+         ================================================================ -->
+      <section class="section">
+        <p class="section-label">Premise</p>
+        <h2 data-annotate>One person should operate like an [enterprise].</h2>
+        <p>
+          This design system encodes three ideas: typography has roles, color
+          carries meaning, and layout communicates structure. Every visual
+          choice traces back to a single principle — clarity over decoration.
+        </p>
+        <div class="grid grid--3 mt-xl">
+          <div class="card">
+            <p class="section-label">Thesis</p>
+            <h4 class="font-serif">Serif</h4>
+            <p class="text-sm text-muted mb-0">
+              Headlines and big ideas. Declares the position.
+            </p>
+          </div>
+          <div class="card">
+            <p class="section-label">Explanation</p>
+            <h4 class="font-sans">Sans</h4>
+            <p class="text-sm text-muted mb-0">
+              Body text and context. Delivers the reasoning.
+            </p>
+          </div>
+          <div class="card">
+            <p class="section-label">Proof</p>
+            <h4 class="font-mono">Mono</h4>
+            <p class="text-sm text-muted mb-0">
+              Code, commands, and benchmarks. Shows the evidence.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================
+         Color
+         ================================================================ -->
+      <section class="section">
+        <p class="section-label">Color</p>
+        <h2>Palette</h2>
+        <p>
+          Use accent <strong>only for meaning</strong> — links, highlights, and
+          the bracketed annotation. Everything else stays neutral.
+        </p>
+        <div class="grid grid--4 mt-xl">
+          <div class="card">
+            <div class="swatch" style="background-color: #f5f2ed"></div>
+            <p class="text-sm"><strong>Background</strong></p>
+            <p class="text-sm text-muted mb-0">
+              <code>--color-bg</code><br />#F5F2ED
+            </p>
+          </div>
+          <div class="card">
+            <div class="swatch" style="background-color: #eceae4"></div>
+            <p class="text-sm"><strong>Surface</strong></p>
+            <p class="text-sm text-muted mb-0">
+              <code>--color-bg-surface</code><br />#ECEAE4
+            </p>
+          </div>
+          <div class="card">
+            <div class="swatch" style="background-color: #1a1a1a"></div>
+            <p class="text-sm"><strong>Text</strong></p>
+            <p class="text-sm text-muted mb-0">
+              <code>--color-text</code><br />#1A1A1A
+            </p>
+          </div>
+          <div class="card">
+            <div class="swatch" style="background-color: #1a6b5a"></div>
+            <p class="text-sm"><strong>Accent</strong></p>
+            <p class="text-sm text-muted mb-0">
+              <code>--color-accent</code><br />#1A6B5A
+            </p>
+          </div>
+        </div>
+        <div class="grid grid--4 mt-lg">
+          <div class="card">
+            <div class="swatch" style="background-color: #e2ded7"></div>
+            <p class="text-sm"><strong>Code</strong></p>
+            <p class="text-sm text-muted mb-0">
+              <code>--color-bg-code</code><br />#E2DED7
+            </p>
+          </div>
+          <div class="card">
+            <div class="swatch" style="background-color: #6b6560"></div>
+            <p class="text-sm"><strong>Muted</strong></p>
+            <p class="text-sm text-muted mb-0">
+              <code>--color-text-muted</code><br />#6B6560
+            </p>
+          </div>
+          <div class="card">
+            <div class="swatch" style="background-color: #d1ccc4"></div>
+            <p class="text-sm"><strong>Border</strong></p>
+            <p class="text-sm text-muted mb-0">
+              <code>--color-border</code><br />#D1CCC4
+            </p>
+          </div>
+          <div class="card">
+            <div class="swatch" style="background-color: #145447"></div>
+            <p class="text-sm"><strong>Accent Hover</strong></p>
+            <p class="text-sm text-muted mb-0">
+              <code>--color-accent-hover</code><br />#145447
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================
+         Typography
+         ================================================================ -->
+      <section class="section">
+        <p class="section-label">Typography</p>
+        <h2>Three roles, never mixed</h2>
+
+        <div class="mt-xl">
+          <p class="section-label">Serif — Thesis</p>
+          <h1 class="font-serif">Source Serif 4</h1>
+          <h2 class="font-serif">Headlines declare the position.</h2>
+          <h3 class="font-serif">Sub-headlines frame the argument.</h3>
+          <p class="text-sm text-muted">
+            Source Serif 4 &middot; Weight 300–900 &middot; Used for all
+            headings (h1–h4)
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <div>
+          <p class="section-label">Sans — Explanation</p>
+          <p class="text-lg">
+            Inter is the workhorse. It handles body copy, descriptions,
+            navigation, and any text that exists to explain or contextualize.
+            Set at 16px base with 1.8 line-height for comfortable reading.
+          </p>
+          <p class="text-sm text-muted">
+            Inter &middot; Weight 400–700 &middot; Used for body text, labels,
+            UI
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <div>
+          <p class="section-label">Mono — Proof</p>
+          <pre><code>$ axi run transform --input data --task "clean and analyze"
+  [ok] Pipeline initialized
+  [ok] 3 agents active
+  [ok] Output: results/analysis.json
+
+  Tokens: 34% reduction  ·  2.5x faster</code></pre>
+          <p class="text-sm text-muted">
+            JetBrains Mono &middot; Weight 400–500 &middot; Used for code,
+            commands, benchmarks
+          </p>
+        </div>
+      </section>
+
+      <!-- ================================================================
+         Signature Element
+         ================================================================ -->
+      <section class="section">
+        <p class="section-label">Signature Element</p>
+        <h2>The inline annotation</h2>
+        <p>
+          Every piece includes a bracketed concept in the title — the single
+          most important idea, rendered in the accent color. This is the primary
+          brand identifier. Add <code>data-annotate</code> to any heading and
+          the JS processor handles the rest.
+        </p>
+
+        <div class="grid grid--2 mt-xl">
+          <div class="card">
+            <h3 data-annotate>The future of work is [agent-native].</h3>
+            <p class="text-sm text-muted mb-0">
+              Most software is still stuck in human-first workflows. It's time
+              to build tools for autonomous agents.
+            </p>
+          </div>
+          <div class="card">
+            <h3 data-annotate>Stop using tools. Start building a [system].</h3>
+            <p class="text-sm text-muted mb-0">
+              Why one person should operate like an organization.
+            </p>
+          </div>
+          <div class="card">
+            <h3 data-annotate>AXI: The [agent-first] command line.</h3>
+            <p class="text-sm text-muted mb-0">
+              An interface built natively for autonomous agents.
+            </p>
+          </div>
+          <div class="card">
+            <h3 data-annotate>Building an [Institution of One].</h3>
+            <p class="text-sm text-muted mb-0">
+              How to operate with the leverage of an entire team, solo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================
+         Section Labels
+         ================================================================ -->
+      <section class="section">
+        <p class="section-label">Structure</p>
+        <h2>Content follows a fixed format</h2>
+        <p>
+          Every essay uses the same six-part structure. Section labels are
+          small, uppercase, and muted — they organize without competing with the
+          headline.
+        </p>
+
+        <div class="grid grid--3 mt-xl">
+          <div class="card">
+            <p class="section-label mb-0">Premise</p>
+            <p class="text-sm text-muted mb-0">One sharp sentence.</p>
+          </div>
+          <div class="card">
+            <p class="section-label mb-0">Broken Default</p>
+            <p class="text-sm text-muted mb-0">What's wrong today.</p>
+          </div>
+          <div class="card">
+            <p class="section-label mb-0">New Model</p>
+            <p class="text-sm text-muted mb-0">Name the concept.</p>
+          </div>
+          <div class="card">
+            <p class="section-label mb-0">Mechanism</p>
+            <p class="text-sm text-muted mb-0">How it works.</p>
+          </div>
+          <div class="card">
+            <p class="section-label mb-0">Proof</p>
+            <p class="text-sm text-muted mb-0">Example, diagram, or code.</p>
+          </div>
+          <div class="card">
+            <p class="section-label mb-0">Implication</p>
+            <p class="text-sm text-muted mb-0">What becomes possible.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================
+         Cards & Tables
+         ================================================================ -->
+      <section class="section">
+        <p class="section-label">Benchmark</p>
+        <h2>Thinking artifacts over decoration</h2>
+        <p>
+          Every piece includes at least one visual artifact — a comparison
+          table, a code block, a workflow diagram. These are tools for thinking,
+          not ornament.
+        </p>
+
+        <div class="card mt-xl">
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Approach</th>
+                  <th>Setup</th>
+                  <th>Maintenance</th>
+                  <th>Leverage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Ad hoc tools</strong></td>
+                  <td>Minutes</td>
+                  <td>High — manual glue</td>
+                  <td>1x</td>
+                </tr>
+                <tr>
+                  <td><strong>Hybrid stack</strong></td>
+                  <td>Days</td>
+                  <td>Medium — partial automation</td>
+                  <td>3x</td>
+                </tr>
+                <tr>
+                  <td><strong>Unified system</strong></td>
+                  <td>Weeks</td>
+                  <td>Low — self-maintaining</td>
+                  <td>10x</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="grid grid--2 mt-xl">
+          <div class="card">
+            <p class="section-label">Old Way</p>
+            <pre><code>$ run_script.sh --arg1 data.csv
+  Processing... done.
+  Manual review required.</code></pre>
+          </div>
+          <div class="card">
+            <p class="section-label">New Model</p>
+            <pre><code>$ axi run transform --input data \
+    --task "clean and analyze"
+  [ok] Automated. No manual steps.</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================
+         Layout
+         ================================================================ -->
+      <section class="section">
+        <p class="section-label">Layout</p>
+        <h2>Strong margins, thin dividers</h2>
+        <p>
+          Design is structured with generous whitespace, grid-aligned sections,
+          and thin 1px dividers. No decorative elements. The grid supports 2, 3,
+          and 4 column layouts that collapse to a single column on small
+          screens.
+        </p>
+
+        <div class="grid grid--3 mt-xl">
+          <div class="card" style="text-align: center">
+            <p class="text-sm text-muted mb-0">Column 1</p>
+          </div>
+          <div class="card" style="text-align: center">
+            <p class="text-sm text-muted mb-0">Column 2</p>
+          </div>
+          <div class="card" style="text-align: center">
+            <p class="text-sm text-muted mb-0">Column 3</p>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="grid grid--2">
+          <div class="card" style="text-align: center">
+            <p class="text-sm text-muted mb-0">Left</p>
+          </div>
+          <div class="card" style="text-align: center">
+            <p class="text-sm text-muted mb-0">Right</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================
+         Usage
+         ================================================================ -->
+      <section class="section">
+        <p class="section-label">Mechanism</p>
+        <h2>How to use this system</h2>
+        <p>
+          Reference the CSS and JS from any page to apply the design system. No
+          build step required — vanilla CSS custom properties and a single small
+          script.
+        </p>
+        <div class="card mt-xl">
+          <pre><code>&lt;!-- Add to any HTML page --&gt;
+&lt;link rel="stylesheet"
+  href="https://kunchenguid.github.io/kunchenguid-design-system/css/design-system.css"&gt;
+&lt;script
+  src="https://kunchenguid.github.io/kunchenguid-design-system/js/design-system.js"
+  defer&gt;&lt;/script&gt;</code></pre>
+        </div>
+        <div class="card mt-lg">
+          <p class="section-label">Annotation Markup</p>
+          <pre><code>&lt;!-- Option A: auto-processed by JS --&gt;
+&lt;h1 data-annotate&gt;The future of work is [agent-native].&lt;/h1&gt;
+
+&lt;!-- Option B: manual markup --&gt;
+&lt;h1&gt;The future of work is &lt;span class="annotation"&gt;[agent-native]&lt;/span&gt;.&lt;/h1&gt;</code></pre>
+        </div>
+      </section>
+
+      <!-- ================================================================
+         Writing Style
+         ================================================================ -->
+      <section class="section">
+        <p class="section-label">Implication</p>
+        <h2>Consistency builds recognition</h2>
+        <p>
+          Same title pattern. Same structure. Same typography roles. Same visual
+          artifacts. Every post feels like part of a larger system, not a
+          standalone piece.
+        </p>
+        <div class="grid grid--2 mt-xl">
+          <div>
+            <h4>Do</h4>
+            <ul>
+              <li>Precise, not performative</li>
+              <li>Opinionated, but justified</li>
+              <li>Systems-level thinking</li>
+              <li>Calm tone, no hype</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Avoid</h4>
+            <ul>
+              <li>Buzzwords</li>
+              <li>Over-explaining</li>
+              <li>Marketing language</li>
+              <li>Decorative illustrations</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================
+         Footer
+         ================================================================ -->
+      <footer class="section" style="padding-bottom: var(--space-xl)">
+        <p class="text-sm text-muted">
+          Design System &middot; Kun Chen &middot;
+          <a href="https://github.com/kunchenguid/kunchenguid-design-system"
+            >Source</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
