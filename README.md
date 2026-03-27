@@ -27,6 +27,16 @@ Drop them into any HTML page and get a consistent visual identity: editorial typ
 <h1 data-annotate>The future of work is [agent-native].</h1>
 ```
 
+## Agent Skill
+
+This repo includes a skill that teaches AI coding agents how to build pages with this design system. Install it with [skills](https://github.com/vercel-labs/skills):
+
+```sh
+npx skills add -g kunchenguid/kunchenguid-design-system
+```
+
+Once installed, agents can invoke `/use-kunchenguid-design-system` to get the full spec: boilerplate, components, typography roles, color tokens, and a complete page example.
+
 ## How It Works
 
 The system is built on three layers: tokens, components, and one small JS behavior.
