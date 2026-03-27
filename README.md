@@ -5,6 +5,8 @@
 
 <h3 align="center">My personal brand design system.</h3>
 
+<p align="center"><strong><a href="https://kunchenguid.github.io/kunchenguid-design-system/">Live Reference →</a></strong></p>
+
 This is a vanilla CSS + JS design system built for my personal content. Two files. No build step.
 Drop them into any HTML page and get a consistent visual identity: editorial typography, structured layouts, and the signature `[bracketed annotation]` pattern.
 
