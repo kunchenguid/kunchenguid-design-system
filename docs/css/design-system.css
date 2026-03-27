@@ -397,4 +397,12 @@ pre code {
   .section {
     padding: var(--space-2xl) 0;
   }
+
+  pre {
+    padding: var(--space-md);
+  }
+
+  pre code {
+    font-size: 0.8125rem;
+  }
 }
