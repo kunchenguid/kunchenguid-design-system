@@ -124,6 +124,12 @@ p {
   line-height: var(--leading-loose);
 }
 
+/* Give sub-headings breathing room when they continue body copy. */
+p + h3,
+p + h4 {
+  margin-top: var(--space-lg);
+}
+
 ul,
 ol {
   margin-bottom: var(--space-md);
